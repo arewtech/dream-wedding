@@ -135,7 +135,7 @@ export const wedding = {
   // ---------------------------------------------------------------
   // Hashtag & meta
   // ---------------------------------------------------------------
-  hashtag: "#NabilAminForever",
+  hashtag: "#NabilAminatulForever",
   defaultGuest: "Bapak/Ibu/Saudara/i",
 } as const;
 

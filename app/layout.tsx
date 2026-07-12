@@ -36,8 +36,15 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    images: [wedding.heroPhoto],
     type: "website",
+    locale: "id_ID",
+    // og:image otomatis diambil dari app/opengraph-image.tsx
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    // twitter:image otomatis diambil dari app/opengraph-image.tsx
   },
 };
 
