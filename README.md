@@ -35,10 +35,12 @@ Tambah galeri cukup dengan menambahkan path baru ke array `gallery`.
 
 ## 🎵 Musik Latar
 
-Letakkan `public/audio/backsound.mp3`. Musik autoplay saat tombol
-**"Buka Undangan"** diklik (mematuhi kebijakan browser: butuh gesture user).
-Tombol melayang di kanan-bawah untuk play/pause. Jika file tidak ada, tombol
-otomatis disembunyikan.
+Sudah ada instrumental piano lembut bawaan di `public/audio/backsound.wav`.
+Musik autoplay saat tombol **"Buka Undangan"** diklik (mematuhi kebijakan
+browser: butuh gesture user). Tombol melayang di kanan-bawah untuk play/pause.
+
+Ingin ganti lagu sendiri? Taruh file di `public/audio/` lalu ubah `music.src`
+di `config/wedding.ts`. Jika file tidak ada, tombol otomatis disembunyikan.
 
 ## 👤 Nama Tamu Otomatis
 

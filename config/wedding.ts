@@ -10,18 +10,12 @@ export const wedding = {
   groom: {
     name: "Muhammad Nabil Mufarruidt ilallah",
     shortName: "Nabil",
-    bio: "Putra dari Bapak Fulan & Ibu Fulanah",
     parents: "Putra dari Bapak Fulan & Ibu Fulanah",
-    photo: "/images/groom.jpg",
-    instagram: "https://instagram.com/",
   },
   bride: {
     name: "Aminatul Mukholifah",
-    shortName: "Amin",
-    bio: "Putri dari Bapak Fulan & Ibu Fulanah",
+    shortName: "Aminatul",
     parents: "Putri dari Bapak Fulan & Ibu Fulanah",
-    photo: "/images/bride.jpg",
-    instagram: "https://instagram.com/",
   },
 
   // ---------------------------------------------------------------
@@ -38,17 +32,17 @@ export const wedding = {
       title: "Akad Nikah",
       date: "Minggu, 16 Agustus 2026",
       time: "08.00 WIB",
-      place: "Kediaman Mempelai Wanita",
+      place: "Kediaman Mempelai Laki-laki",
       address:
-        "V9RJ+2GJ, Tunggangan, Yosorati, Kec. Sumberbaru, Kabupaten Jember, Jawa Timur 68156",
+        "Tunggangan, Yosorati, Kec. Sumberbaru, Kabupaten Jember, Jawa Timur 68156",
     },
     {
       title: "Resepsi",
       date: "Minggu, 16 Agustus 2026",
       time: "12.00 WIB",
-      place: "Kediaman Mempelai Wanita",
+      place: "Kediaman Mempelai Laki-laki",
       address:
-        "V9RJ+2GJ, Tunggangan, Yosorati, Kec. Sumberbaru, Kabupaten Jember, Jawa Timur 68156",
+        "Tunggangan, Yosorati, Kec. Sumberbaru, Kabupaten Jember, Jawa Timur 68156",
     },
   ],
 
@@ -56,9 +50,10 @@ export const wedding = {
   // Lokasi / Google Maps
   // ---------------------------------------------------------------
   location: {
+    // Alamat yang ditampilkan (tanpa Plus Code "V9RJ+2GJ")
     address:
-      "V9RJ+2GJ, Tunggangan, Yosorati, Kec. Sumberbaru, Kabupaten Jember, Jawa Timur 68156",
-    // Embed map (iframe) — query berdasarkan alamat
+      "Tunggangan, Yosorati, Kec. Sumberbaru, Kabupaten Jember, Jawa Timur 68156",
+    // Embed map (iframe) — tetap memakai Plus Code agar titik peta akurat
     mapEmbed:
       "https://www.google.com/maps?q=V9RJ%2B2GJ%2C+Tunggangan%2C+Yosorati%2C+Kec.+Sumberbaru%2C+Kabupaten+Jember%2C+Jawa+Timur+68156&output=embed",
     // Tombol "Buka di Google Maps"
@@ -96,10 +91,10 @@ export const wedding = {
   // Galeri (mudah ditambah — cukup taruh file baru & tambahkan path)
   // ---------------------------------------------------------------
   gallery: [
-    "/images/gallery-1.jpg",
-    "/images/gallery-2.jpg",
-    "/images/gallery-3.jpg",
-    "/images/gallery-4.jpg",
+    "/images/couple-1.jpg",
+    "/images/couple-2.jpg",
+    "/images/couple-3.jpg",
+    "/images/couple-4.jpg",
   ],
   heroPhoto: "/images/hero.jpg",
 
@@ -121,11 +116,12 @@ export const wedding = {
   ],
 
   // ---------------------------------------------------------------
-  // Musik latar (letakkan file di /public/audio/backsound.mp3)
+  // Musik latar (instrumental piano lembut — bawaan project).
+  // Ganti dengan lagu sendiri: taruh file di /public/audio/ lalu ubah src.
   // ---------------------------------------------------------------
   music: {
-    src: "/audio/backsound.mp3",
-    title: "Backsound",
+    src: "/audio/backsound.wav",
+    title: "Instrumental",
   },
 
   // ---------------------------------------------------------------
