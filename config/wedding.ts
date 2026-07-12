@@ -10,12 +10,12 @@ export const wedding = {
   groom: {
     name: "Muhammad Nabil Mufarruidt ilallah",
     shortName: "Nabil",
-    parents: "Putra dari Bapak Fulan & Ibu Fulanah",
+    parents: "Putra dari Bapak Syaifuddin Zuhri & Ibu Suhartini (Almh.)",
   },
   bride: {
     name: "Aminatul Mukholifah",
     shortName: "Aminatul",
-    parents: "Putri dari Bapak Fulan & Ibu Fulanah",
+    parents: "Putri dari Bapak Siswoko & Ibu Sriyem",
   },
 
   // ---------------------------------------------------------------
