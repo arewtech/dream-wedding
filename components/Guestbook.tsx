@@ -16,6 +16,30 @@ type Wish = {
 
 const STORAGE_KEY = "wedding_wishes_v1";
 
+const SEED_WISHES: Wish[] = [
+  {
+    id: "seed-risky",
+    name: "Risky",
+    attend: "Hadir",
+    message: "Selamat menempuh hidup baru! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. 🤍",
+    at: Date.now() - 1000 * 60 * 60 * 5,
+  },
+  {
+    id: "seed-andi-bayu",
+    name: "Andi Bayu",
+    attend: "Hadir",
+    message: "Barakallahu lakuma wa baraka alaikuma. Semoga langgeng sampai kakek nenek ya!",
+    at: Date.now() - 1000 * 60 * 60 * 3,
+  },
+  {
+    id: "seed-maman",
+    name: "Maman",
+    attend: "Ragu",
+    message: "Selamat ya! Semoga bisa hadir, doakan tidak ada halangan. Bahagia selalu untuk kalian berdua.",
+    at: Date.now() - 1000 * 60 * 45,
+  },
+];
+
 function relativeTime(ts: number) {
   const diff = Date.now() - ts;
   const m = Math.floor(diff / 60000);
@@ -33,7 +57,7 @@ export function Guestbook() {
   const params = useSearchParams();
   const guestParam = params.get("to") ?? params.get("kepada") ?? "";
 
-  const [wishes, setWishes] = useState<Wish[]>([]);
+  const [wishes, setWishes] = useState<Wish[]>(SEED_WISHES);
   const [name, setName] = useState("");
   const [attend, setAttend] = useState<Wish["attend"]>("Hadir");
   const [message, setMessage] = useState("");
@@ -43,7 +67,9 @@ export function Guestbook() {
   useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) setWishes(JSON.parse(raw));
+      const saved: Wish[] = raw ? JSON.parse(raw) : [];
+      // Seed statis selalu tampil, lalu lanjutkan dengan data dari localStorage
+      setWishes([...saved, ...SEED_WISHES]);
     } catch {
       /* ignore */
     }
@@ -55,7 +81,11 @@ export function Guestbook() {
   useEffect(() => {
     if (!loaded) return;
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(wishes));
+      // Jangan simpan seed statis, hanya ucapan dari pengguna
+      const userWishes = wishes.filter(
+        (w) => !SEED_WISHES.some((s) => s.id === w.id),
+      );
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(userWishes));
     } catch {
       /* ignore */
     }
