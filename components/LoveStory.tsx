@@ -18,7 +18,7 @@ export function LoveStory() {
         <div className="space-y-10">
           {wedding.story.map((item, i) => (
             <Reveal
-              key={item.date}
+              key={`${item.date}-${i}`}
               delay={i * 0.05}
               className={`relative pl-10 sm:w-1/2 sm:pl-0 ${
                 i % 2 === 0

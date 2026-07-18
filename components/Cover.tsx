@@ -24,7 +24,7 @@ export function Cover({ onOpen }: { onOpen: () => void }) {
         fill
         priority
         sizes="100vw"
-        className="object-cover"
+        className="object-cover object-center md:object-[50%_25%]"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/50 to-sage-dark/70" />
 

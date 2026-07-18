@@ -14,7 +14,7 @@ export const wedding = {
   },
   bride: {
     name: "Aminatul Mukholifah",
-    shortName: "Aminatul",
+    shortName: "Ami",
     parents: "Putri dari Bapak Siswoko & Ibu Sriyem",
   },
 
@@ -22,7 +22,7 @@ export const wedding = {
   // Tanggal utama (dipakai countdown & format tanggal)
   //   Format ISO: YYYY-MM-DDTHH:mm:ss  (WIB = +07:00)
   // ---------------------------------------------------------------
-  date: "2026-08-16T08:00:00+07:00",
+  date: "2026-08-16T09:00:00+07:00",
 
   // ---------------------------------------------------------------
   // Acara
@@ -31,18 +31,26 @@ export const wedding = {
     {
       title: "Akad Nikah",
       date: "Minggu, 16 Agustus 2026",
-      time: "08.00 WIB",
-      place: "Kediaman Mempelai Laki-laki",
+      time: "09.00 WIB",
+      place: "Kediaman Mempelai Wanita",
       address:
-        "Tunggangan, Yosorati, Kec. Sumberbaru, Kabupaten Jember, Jawa Timur 68156",
+        "Dusun Banjarrejo Barat RT 1 RW 9, Sumberagung, Sumberbaru, Jember (Barat Lapangan Sumberagung)",
+    },
+    {
+      title: "Temu Manten",
+      date: "Minggu, 16 Agustus 2026",
+      time: "12.00 WIB",
+      place: "Kediaman Mempelai Wanita",
+      address:
+        "Dusun Banjarrejo Barat RT 1 RW 9, Sumberagung, Sumberbaru, Jember (Barat Lapangan Sumberagung)",
     },
     {
       title: "Resepsi",
       date: "Minggu, 16 Agustus 2026",
-      time: "12.00 WIB",
-      place: "Kediaman Mempelai Laki-laki",
+      time: "14.00 WIB",
+      place: "Kediaman Mempelai Wanita",
       address:
-        "Tunggangan, Yosorati, Kec. Sumberbaru, Kabupaten Jember, Jawa Timur 68156",
+        "Dusun Banjarrejo Barat RT 1 RW 9, Sumberagung, Sumberbaru, Jember (Barat Lapangan Sumberagung)",
     },
   ],
 
@@ -50,15 +58,14 @@ export const wedding = {
   // Lokasi / Google Maps
   // ---------------------------------------------------------------
   location: {
-    // Alamat yang ditampilkan (tanpa Plus Code "V9RJ+2GJ")
+    // Alamat yang ditampilkan
     address:
-      "Tunggangan, Yosorati, Kec. Sumberbaru, Kabupaten Jember, Jawa Timur 68156",
-    // Embed map (iframe) — tetap memakai Plus Code agar titik peta akurat
+      "Dusun Banjarrejo Barat RT 1 RW 9, Sumberagung, Sumberbaru, Jember (Barat Lapangan Sumberagung)",
+    // Embed map (iframe) — memakai query alamat agar titik peta muncul
     mapEmbed:
-      "https://www.google.com/maps?q=V9RJ%2B2GJ%2C+Tunggangan%2C+Yosorati%2C+Kec.+Sumberbaru%2C+Kabupaten+Jember%2C+Jawa+Timur+68156&output=embed",
-    // Tombol "Buka di Google Maps"
-    mapUrl:
-      "https://www.google.com/maps?q=V9RJ%2B2GJ%2C+Tunggangan%2C+Yosorati%2C+Kec.+Sumberbaru%2C+Kabupaten+Jember%2C+Jawa+Timur+68156",
+      "https://www.google.com/maps?q=Dusun+Banjarrejo+Barat%2C+Sumberagung%2C+Sumberbaru%2C+Jember&output=embed",
+    // Tombol "Buka di Google Maps" — link asli dari mempelai
+    mapUrl: "https://maps.app.goo.gl/oecdtzrHuh9eN75n7?g_st=iw",
   },
 
   // ---------------------------------------------------------------
@@ -66,24 +73,24 @@ export const wedding = {
   // ---------------------------------------------------------------
   story: [
     {
-      date: "2019",
-      title: "Pertama Bertemu",
-      text: "Takdir mempertemukan kami di bangku kuliah, dari sekadar teman biasa menjadi cerita yang tak terlupakan.",
-    },
-    {
-      date: "2022",
-      title: "Menjalin Hubungan",
-      text: "Kami memutuskan untuk saling mengenal lebih dalam dan menjalani hari bersama dengan penuh kepercayaan.",
+      date: "2024",
+      title: "Awal Bertemu",
+      text: "Segala sesuatu telah tertulis dengan indah dalam rencana-Nya. Kami pertama kali dipertemukan di tempat kerja, sebagai pekerja dan nasabah. Siapa sangka pertemuan sederhana di Banking Hall menjadi awal dari perjalanan panjang kami bersama.",
     },
     {
       date: "2025",
-      title: "Lamaran",
-      text: "Dengan restu kedua keluarga, kami mengikat janji suci pertunangan sebagai langkah menuju pernikahan.",
+      title: "Menjalin Hubungan",
+      text: "Dari pertemuan sederhana berlanjut menjadi obrolan hangat. Perasaan yang awalnya samar perlahan tumbuh menjadi nyata. Hingga kami akhirnya memutuskan untuk menjalin hubungan. Perjalanan cinta kami bukanlah tanpa ujian. Kami dihadapkan dengan jarak yang memisahkan, dilingkupi keraguan, dihadapkan dengan pilihan yang sulit, bahkan sempat terlintas keinginan untuk menyerah. Entah sudah berapa kali kami saling memaafkan dan kembali menguatkan.",
     },
     {
       date: "2026",
-      title: "Menuju Halal",
-      text: "Kami mantapkan hati untuk menyempurnakan setengah agama dan memulai lembaran baru bersama selamanya.",
+      title: "Lamaran",
+      text: "Atas restu orang tua dan keluarga kami melangsungkan lamaran pada 4 Juli 2026. Pada akhirnya jemari akan menemukan genggaman yang tepat, kepala akan menemukan bahu yang tepat, hati akan menemukan rumah yang tepat.",
+    },
+    {
+      date: "2026",
+      title: "Menikah",
+      text: "Pernikahan bukan karena bertemu lalu berjodoh tapi karena berjodohlah kami dipertemukan, kami memutuskan untuk mengikrarkan janji suci pernikahan pada tanggal 16 Agustus 2026. Semoga langkah baru yang kami mulai ini senantiasa diberkahi dan menjadi perjalanan cinta yang indah sepanjang hayat.",
     },
   ],
 
@@ -91,12 +98,15 @@ export const wedding = {
   // Galeri (mudah ditambah — cukup taruh file baru & tambahkan path)
   // ---------------------------------------------------------------
   gallery: [
-    "/images/couple-1.jpg",
-    "/images/couple-2.jpg",
-    "/images/couple-3.jpg",
-    "/images/couple-4.jpg",
+    "/images/new-1.jpg",
+    "/images/new-2.jpg",
+    "/images/new-3.jpg",
+    "/images/new-4.jpg",
+    "/images/new-5.jpg",
+    "/images/new-6.jpg",
+    "/images/new-7.jpg",
   ],
-  heroPhoto: "/images/hero.jpg",
+  heroPhoto: "/images/hero-studio.jpg",
 
   // ---------------------------------------------------------------
   // Amplop digital (bank / e-wallet)
@@ -135,7 +145,7 @@ export const wedding = {
   // ---------------------------------------------------------------
   // Hashtag & meta
   // ---------------------------------------------------------------
-  hashtag: "#NabilAminatulForever",
+  hashtag: "#NabilAmiForever",
   defaultGuest: "Bapak/Ibu/Saudara/i",
 } as const;
 

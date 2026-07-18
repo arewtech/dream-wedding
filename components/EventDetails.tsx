@@ -13,9 +13,13 @@ export function EventDetails() {
         <Countdown />
       </Reveal>
 
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="flex flex-col gap-6 sm:flex-row sm:flex-wrap sm:justify-center">
         {wedding.events.map((ev, i) => (
-          <Reveal key={ev.title} delay={i * 0.1}>
+          <Reveal
+            key={ev.title}
+            delay={i * 0.1}
+            className="sm:w-[calc(50%-0.75rem)] lg:max-w-sm"
+          >
             <div className="glass-card h-full p-6 text-center">
               <span className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-sage/15 text-2xl">
                 {ev.title.toLowerCase().includes("akad") ? "💍" : "🎉"}
