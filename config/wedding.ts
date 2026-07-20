@@ -116,13 +116,24 @@ export const wedding = {
     {
       type: "bank" as const,
       provider: "BRI",
-      name: "Muhammad Nabil Mufarruidt ilallah",
-      number: "006501192218539",
+      name: "Aminatul",
+      number: "623901045089539",
       color: "from-[#00529C] to-[#0a6fd1]",
     },
-    // Contoh tambahan (aktifkan bila sudah ada datanya):
-    // { type: "ewallet", provider: "DANA", name: "...", number: "0812xxxx", color: "from-[#118EEA] to-[#38a7f5]" },
-    // { type: "ewallet", provider: "ShopeePay", name: "...", number: "0812xxxx", color: "from-[#EE4D2D] to-[#ff6a48]" },
+    {
+      type: "bank" as const,
+      provider: "Seabank",
+      name: "Nabil",
+      number: "901521941597",
+      color: "from-[#F47216] via-[#1a4fd6] to-[#0F2F91]",
+    },
+    {
+      type: "ewallet" as const,
+      provider: "ShopeePay",
+      name: "Nabil",
+      number: "085167338921",
+      color: "from-[#EE4D2D] to-[#ff6a48]",
+    },
   ],
 
   // ---------------------------------------------------------------
