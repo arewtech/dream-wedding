@@ -104,7 +104,6 @@ export const wedding = {
     "/images/new-4.jpg",
     "/images/new-5.jpg",
     "/images/new-6.jpg",
-    "/images/new-7.jpg",
   ],
   heroPhoto: "/images/hero-studio.jpg",
 
